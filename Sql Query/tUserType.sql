@@ -33,6 +33,20 @@ CREATE TABLE `petmanagement`.`tUser`
 ) ENGINE = InnoDB;
 
 
+-- tProducts TABLE query --
+CREATE TABLE `petmanagement`.`tProduct`
+(
+    `productId` INT(11) NOT NULL AUTO_INCREMENT ,
+    `productName` VARCHAR(255) NOT NULL ,
+    `productImage` VARCHAR(255)  ,
+    `productDescription` VARCHAR(255)  ,
+    `productPrice` DOUBLE (12,2) NOT NULL ,
+    `productCode` VARCHAR(50) NOT NULL,
+    `productQuantity` INT  ,
+    `
+` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+    PRIMARY KEY (`productId`)
 
+)ENGINE = InnoDB;
 
 
